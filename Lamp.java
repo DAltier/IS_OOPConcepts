@@ -1,22 +1,22 @@
-public class Lamp {
+public class Lamp implements ILamp {
 
   boolean isItOn = false;
 
 
-  void turnOn() {
+  public void turnOn() {
 
     isItOn = true;
 
   }
 
 
-  void turnOff() {
+  public void turnOff() {
 
     isItOn = false;
 
   }
 
-  void printState() {
+  public void printState() {
 
     System.out.println("Is the lamp on? " + isItOn);
     
